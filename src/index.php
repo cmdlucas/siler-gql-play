@@ -17,4 +17,4 @@ class Init {
     }
 }
 
-Route\get('/', Init::silerGQL());
+Route\get('/api', Init::silerGQL());
