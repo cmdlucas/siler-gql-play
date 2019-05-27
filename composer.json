@@ -1,0 +1,24 @@
+{
+    "name": "cmdlucas/playground",
+    "description": "Testing autoload and other core php functions",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Caleb Lucas",
+            "email": "caleb@lucasbin.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Play\\": "src/"
+        }
+    },
+    "require": {
+        "leocavalcante/siler": "^1.5",
+        "webonyx/graphql-php": "^0.13.4"
+    }
+}

@@ -1,0 +1,20 @@
+type Info {
+    keyToBin: String!
+    timestamp: Int!
+}
+
+type Room {
+    info: Info!
+    key: Int!
+}
+
+type Query {
+    hello: String
+    rooms: [Room!]!
+    roomsHavingKey(search_keys: [ID!]!): [Room!]!
+    roomsNotHavingKey(search_keys: [ID!]!): [Room!]!
+}
+
+type Mutation {
+    makeRooms (keys: [ID!]): [Room!]!
+}
